@@ -1,0 +1,34 @@
+{
+  "name": "t-bakery",
+  "version": "1.0.0",
+  "description": "Tina's bakery project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandra984/Tina-s-bakery.git"
+  },
+  "keywords": [
+    "tina",
+    "bakery"
+  ],
+  "author": "Alexandra Grecu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandra984/Tina-s-bakery/issues"
+  },
+  "homepage": "https://github.com/Alexandra984/Tina-s-bakery#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}
