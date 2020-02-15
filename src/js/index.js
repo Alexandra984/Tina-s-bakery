@@ -1,3 +1,4 @@
 import x from './test';
-console.log(`hellooooo ${x}`);
+const y = 23;
+console.log(`hellooooo ${x}. Variable y is ${y}`);
 // alert("hello");
