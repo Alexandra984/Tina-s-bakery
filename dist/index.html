@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tina's bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- logo -->
+            <img src="img/logo.png" alt="logo" class="header_logo">
+            <form class="search">
+                <input type="text" class="search_field" placeholder="Search a recipe...">
+                <button class="btn search_btn">
+                    <svg class="search_icon">
+                        <use href="img/icons.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+            <div class="likes">
+                <div class="likes_field">
+                <svg class="likes_icon">
+                    <use href="img/icons.svg#icon-heart"></use>
+                </svg>
+                </div>
+            </div>
+            <div class="likes_panel">
+                <ul class="likes_list">
+                    <!-- <li>
+                        <a class="likes_link" href="#">
+                            <figure class="likes_fig">
+                                <img src="img/test-1.jpg" alt="Test">
+                            </figure>
+                            <div class="likes_data">
+                                <h4 class="likes_name">Pasta with Tomato ...</h4>
+                                <p class="likes_author">The Pioneer Woman</p>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </header>
+
+<!-----------------------------Rezultatele cautarii -------------------------------------->
+        
+        <div class="results">
+            <ul class="results_list">
+                <!-- <li>
+                    <a href="#" class="results_link results_link--active">
+                        <figure class="results_fig">
+                            <img src="img/test-1.jpg" alt="test">
+                        </figure>
+                        <div class="results_data">
+                            <h4 class="results_name">Pasta with Tomato...</h4>
+                            <p class="results_author">The Pioneer Woman</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="results_link results_link--active">
+                        <figure class="results_fig">
+                            <img src="img/test-2.jpg" alt="test">
+                        </figure>
+                        <div class="results_data">
+                            <h4 class="results_name">Pasta Salad with...</h4>
+                            <p class="results_author">Spicy Perspective</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="results_link results_link--active">
+                        <figure class="results_fig">
+                            <img src="img/test-3.jpg" alt="test">
+                        </figure>
+                        <div class="results_data">
+                            <h4 class="results_name">Homemade Tomato</h4>
+                            <p class="results_author">All Recipes</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="results_link results_link--active">
+                        <figure class="results_fig">
+                            <img src="img/test-4.jpg" alt="test">
+                        </figure>
+                        <div class="results_data">
+                            <h4 class="results_name">Pasta with Tomato</h4>
+                            <p class="results_author">The Pioneer Woman</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="results_link results_link--active">
+                        <figure class="results_fig">
+                            <img src="img/test-5.jpg" alt="test">
+                        </figure>
+                        <div class="results_data">
+                            <h4 class="results_name">Greek Pasta with...</h4>
+                            <p class="results_author">Chow</p>
+                        </div>
+                    </a>
+                </li> -->
+            </ul>
+
+            <div class="results_pages">
+                <!-- <button class="btn-inline results_btn--prev">
+                    <svg class="search_icon">
+                        <use href="img/icons.svg#icon-triangle-left"></use>
+                    </svg>
+                    <span>Page 1</span>
+                </button>
+                <button class="btn-inline results_btn--next">
+                    <span>Page 2</span>
+                    <svg class="search_icon">
+                        <use href="img/icons.svg#icon-triangle-right"></use>
+                    </svg>
+                </button> -->
+            </div>
+        </div>
+
+<!----------------------------- Reteta pe care dorim sa o gatim -------------------------------------->
+        
+        <div class="recipe">
+            <!-- <figure class="recipe_fig">
+                <img src="img/test-1.jpg" alt="Tomato" class="recipe_img">
+                <h1 class="recipe_title">
+                    <span>Pasta with tomato cream souce</span>
+                </h1>
+            </figure>
+
+            <div class="recipe_details">
+                <div class="recipe_info">
+                    <svg class="recipe_info-icon">
+                        <use href="img/icons.svg#icon-stopwatch"></use>
+                    </svg>
+                    <span class="recipe_info-data recipe-info-data--minutes">45</span>
+                    <span class="recipe_info-text">minutes</span>
+                </div>
+                <div class="recipe_info">
+                    <svg class="recipe_info-icon">
+                        <use href="img/icons.svg#icon-man"></use>
+                    </svg>
+                    <span class="recipe_info-data recipe_info-data--people">4</span>
+                    <span class="recipe_info-text">servings</span>
+                    
+                    
+                    <div class="recipe_info-buttons">
+                        <button class="btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-minus"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="recipe_love">
+                    <svg class="header_likes">
+                        <use href="img/icons.svg#icon-heart-outlined"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="recipe_ingredients">
+                <ul class="recipe_ingredient-list">
+                    <li class="recipe_item">
+                        <svg class="recipe_icon">
+                            <use href="img/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe_count">1000</div>
+                        <div class="recipe_ingredient">
+                            <span class="recipe_unit">g</span>
+                            pasta
+                        </div>
+                    </li>
+                    <li class="recipe_item">
+                        <svg class="recipe_icon">
+                            <use href="img/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe_count">1/2</div>
+                        <div class="recipe_ingredient">
+                            <span class="recipe_unit">cup</span>
+                            ricotta cheese
+                        </div>
+                    </li>
+                    <li class="recipe_item">
+                        <svg class="recipe_icon">
+                            <use href="img/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe_count">1</div>
+                        <div class="recipe_ingredient">
+                            <span class="recipe_unit"></span>
+                            can of tomatoes, whole or crushed
+                        </div>
+                    </li>
+                    <li class="recipe_item">
+                        <svg class="recipe_icon">
+                            <use href="img/icons.svg#icon-check"></use>
+                        </svg>
+                        <div class="recipe_count">1</div>
+                        <div class="recipe_ingredient">
+                            <span class="recipe_unit"></span>
+                            can tuna packed in olive oil
+                        </div>
+                    </li>
+                </ul>
+
+                Pentru afisarea listei de cumparaturi
+                <button class="btn-small recipe_btn">
+                    <svg class="search__icon">
+                        <use href="img/icons.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span>Add to shopping list</span>
+                </button>
+            </div>
+
+            <div class="recipe_directions">
+                <h2 class="heading-2">How to cook it</h2>
+                <p class="recipe_directions-text">
+                    This recipe was carefully designed and tested by
+                    <span class="recipe_by">The Pioneer Woman</span> Please check out
+                </p>
+                <a href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/" class="btn-small recipe_btn">
+                    <span>Directions</span>
+                    <svg class="search_icon">
+                        <use href="img/icons.svg#icon-triangle-right"></use>
+                    </svg>
+                </a>
+            </div> -->
+
+        </div>
+<!------------------------------ Lista de cumparaturi --------------------------------------->
+        <div class="shopping">
+            <h2 class="heading-2">My Shopping List</h2>
+
+            <ul class="shopping_list">
+                <!-- <li class="shopping_item">
+                    <div class="shopping_count">
+                        <input type="number" value="500" step="100">
+                        <p>g</p>
+                    </div>
+                        <p class="shopping_description">Pasta</p>
+                        <button class="shopping_delete btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-cross"></use>
+                            </svg>
+                        </button>  
+                </li>
+
+                <li class="shopping_item">
+                    <div class="shopping_count">
+                        <input type="number" value="0.5" step="0.1">
+                        <p>cup</p>
+                    </div>
+                        <p class="shopping_description">Ricotta cheese</p>
+                        <button class="shopping_delete btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-cross"></use>
+                            </svg>
+                        </button>  
+                </li>
+
+                <li class="shopping_item">
+                    <div class="shopping_count">
+                        <input type="number" value="3.5" step="0.1">
+                        <p>tbsp</p>
+                    </div>
+                        <p class="shopping_description">Toasted almond slices</p>
+                        <button class="shopping_delete btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-cross"></use>
+                            </svg>
+                        </button>  
+                </li>
+
+                <li class="shopping_item">
+                    <div class="shopping_count">
+                        <input type="number" value="0.5" step="0.1">
+                        <p>g</p>
+                    </div>
+                        <p class="shopping_description">Sea salt</p>
+                        <button class="shopping_delete btn-tiny">
+                            <svg>
+                                <use href="img/icons.svg#icon-circle-with-cross"></use>
+                            </svg>
+                        </button>  
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="./src/js/index.js"></script> -->
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
